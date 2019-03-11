@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/focus_toolbar"
+        android:background="#f00"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"/>
+
+    <TextView
+        android:id="@+id/focus_editor"
+        android:layout_margin="10dp"
+        android:gravity="center_vertical"
+        app:layout_constraintRight_toRightOf="parent"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#fff"
+        android:text="编辑"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp" />
+
+    <ImageView
+        android:id="@+id/focus_back"
+        android:src="@mipmap/em_mm_title_back"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp" />
+
+    <TextView
+        android:textColor="#fff"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:gravity="center_vertical"
+        android:text="我的关注"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp" />
+
+    <TextView
+        android:id="@+id/foucs_insert"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:gravity="center_vertical"
+        app:layout_constraintTop_toBottomOf="@id/focus_toolbar"
+        android:text="+关注更多通航号"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp" />
+    <TextView
+        android:id="@+id/x"
+        app:layout_constraintTop_toBottomOf="@id/foucs_insert"
+        android:background="#c6c2c2"
+        android:layout_width="match_parent"
+        android:layout_height="5dp" />
+
+    <android.support.v7.widget.RecyclerView
+        app:layout_constraintTop_toBottomOf="@id/x"
+        android:id="@+id/foucs_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
+
+
+</android.support.constraint.ConstraintLayout>

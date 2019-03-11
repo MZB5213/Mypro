@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dyth.mzb.utils.myview.MyCustomFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    tools:context=".base.BaseActivity"
+    android:layout_height="80dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#fff">
+
+
+
+
+
+    <TextView
+        android:id="@+id/text_title"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@android:color/white"
+        android:textColor="@android:color/black"
+        android:textSize="20dp"
+        android:text="你有一条消息未读"
+        android:paddingLeft="90dp"
+        android:paddingRight="40dp"
+        />
+
+
+
+
+    <TextView
+        android:id="@+id/tv_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:background="@android:color/holo_orange_dark"
+        android:textColor="#f00000"
+        android:textSize="20dp"
+        android:text="删除"
+        android:gravity="center"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        />
+
+
+    <TextView
+        android:id="@+id/text_body"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:text="你有一条消息未读"
+        android:paddingLeft="90dp"
+        android:paddingRight="40dp"
+        android:paddingTop="40dp"
+        />
+
+
+    <ImageView
+        android:id="@+id/not_headimg"
+        android:src="@mipmap/msc"
+        android:layout_width="80dp"
+        android:layout_height="80dp" />
+
+
+    <TextView
+        android:id="@+id/text_time"
+        android:layout_marginLeft="280dp"
+        android:layout_marginRight="10dp"
+        android:text="5月20日"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+
+
+    <TextView
+        android:paddingTop="20dp"
+        android:id="@+id/text_number"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="300dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+
+
+</com.dyth.mzb.utils.myview.MyCustomFrameLayout>

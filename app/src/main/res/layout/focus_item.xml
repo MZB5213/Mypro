@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="horizontal"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="100dp">
+
+    <ImageView
+        android:id="@+id/focus_headimg"
+        android:layout_margin="10dp"
+        android:layout_gravity="center_vertical"
+        android:src="@color/colorAccent"
+        android:layout_width="80dp"
+        android:layout_height="80dp" />
+    
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/foucs_name"
+            android:layout_margin="5dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:text="小蜗牛"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/foucs_title"
+            android:layout_margin="5dp"
+            android:text="该用户暂无简介"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/focus_time"
+            android:layout_alignParentRight="true"
+            android:text="2018-06-20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+</LinearLayout>

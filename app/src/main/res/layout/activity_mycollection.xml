@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/mToolbar"
+        android:background="#ff00"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        >
+        <ImageView
+            android:id="@+id/my_switch"
+            android:layout_gravity="center"
+            android:src="@mipmap/my_tab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/my_switch2"
+            android:layout_gravity="center"
+            android:src="@mipmap/my_tab2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <ImageView
+        android:id="@+id/my_back"
+        android:src="@mipmap/em_mm_title_back"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp" />
+
+    <TextView
+        android:id="@+id/my_cancel"
+        android:gravity="center_vertical"
+        android:layout_margin="10dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:text="编辑"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp" />
+
+    <ScrollView
+        android:id="@+id/scroll"
+        app:layout_constraintTop_toBottomOf="@id/mToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <android.support.v7.widget.RecyclerView
+        android:id="@id/my_rlv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    </ScrollView>
+
+
+
+        <TextView
+            app:layout_constraintTop_toBottomOf="@id/scroll"
+            android:visibility="gone"
+            android:id="@+id/xian"
+            app:layout_constraintTop_toTopOf="@id/my_delete"
+            android:layout_alignTop="@id/my_delete"
+            android:background="#000"
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+
+        <TextView
+            android:background="#c6c7c6"
+            app:layout_constraintTop_toBottomOf="@id/xian"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:id="@+id/my_delete"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:drawableLeft="@mipmap/collect_delect"
+            android:text="删除(0)"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+
+
+</android.support.constraint.ConstraintLayout>

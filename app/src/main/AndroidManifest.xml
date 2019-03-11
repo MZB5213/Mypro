@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.dyth.mzb">
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- SD卡权限 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <!-- 定位 -->
+    <!-- 用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS">
+    </uses-permission>
+    <!-- 用于访问wifi网络信息，wifi信息会用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" >
+    </uses-permission>
+    <!-- 这个权限用于获取wifi的获取权限，wifi信息会用来进行网络定位 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" >
+    </uses-permission>
+    <!-- 用于读取手机当前的状态 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" >
+    </uses-permission>
+    <!-- 写入扩展存储，向扩展卡写入数据，用于写入缓存定位数据 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" >
+    </uses-permission>
+
+    <application
+        android:name=".MyAppliction"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity" android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".infomation.view.DetailsActivity" />
+        <activity android:name=".infomation.view.CollectionActivity" />
+        <activity android:name=".infomation.view.SearchActivity"/>
+        <activity android:name=".my.view.MyEditorActivity"/>
+        <activity android:name=".my.view.CollectionActivity"/>
+        <activity android:name=".my.view.FocusActivity"/>
+        <activity android:name=".my.view.MoreFocusActivity"/>
+        <activity android:name=".my.view.NoticeActivity"/>
+        <activity android:name=".my.view.SettingActivity"/>
+        <activity android:name=".my.view.CommentActivity" />
+        <activity android:name=".my.view.MyTopicActivity"/>
+        <activity android:name=".my.view.FeedBackActivity" />
+        <activity android:name=".my.view.FeedBackActivity"/>
+        <activity android:name=".my.view.AboutUsFragment"/>
+        <activity android:name=".infomation.view.ChannelActivity"/>
+
+        <meta-data android:value="YOUR_APP_KEY" android:name="UMENG_APPKEY"/>
+        <meta-data android:value="Channel ID" android:name="UMENG_CHANNEL"/>
+    </application>
+
+</manifest>

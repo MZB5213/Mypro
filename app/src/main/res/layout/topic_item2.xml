@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout android:orientation="vertical"
+    android:layout_margin="10dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+        <ImageView
+            android:id="@+id/topic_headimg"
+            android:layout_margin="10dp"
+            android:src="@color/colorAccent"
+            android:layout_width="80dp"
+            android:layout_height="80dp" />
+
+            <TextView
+                android:layout_marginLeft="15dp"
+                app:layout_constraintLeft_toRightOf="@id/topic_headimg"
+                android:id="@+id/topic_name"
+                android:textColor="#00ddff"
+                android:textSize="20sp"
+                android:text="20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_marginLeft="15dp"
+                app:layout_constraintLeft_toRightOf="@id/topic_headimg"
+                app:layout_constraintTop_toBottomOf="@id/topic_name"
+                android:id="@+id/topic_time"
+                android:layout_marginTop="20dp"
+                android:text="20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+
+    <TextView
+        app:layout_constraintTop_toBottomOf="@id/topic_headimg"
+        android:id="@+id/topic_title"
+        android:layout_margin="10dp"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:text="分享文章"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+
+        <ImageView
+            app:layout_constraintTop_toBottomOf="@id/topic_title"
+            android:src="@mipmap/yt"
+            android:layout_margin="10dp"
+            android:id="@+id/topic_pic1"
+            android:layout_width="100dp"
+            android:layout_height="100dp" />
+
+        <TextView
+            app:layout_constraintTop_toBottomOf="@id/topic_title"
+            app:layout_constraintLeft_toRightOf="@id/topic_pic1"
+            android:id="@+id/topic_title2"
+            android:layout_margin="10dp"
+            android:text="123456"
+            android:layout_weight="6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+
+    <TextView
+        android:id="@+id/x"
+        app:layout_constraintTop_toBottomOf="@id/topic_pic1"
+        android:layout_marginLeft="10dp"
+        android:text="最新参与"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        app:layout_constraintTop_toBottomOf="@+id/x"
+        android:text="A:看着不错哦!安全性能怎么样？哪里可以租到，可
+        以联系一下，我公司最近有活动正好需要，期待
+        回复握手！！~"
+        android:textSize="15dp"
+        android:background="#e3dede"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</android.support.constraint.ConstraintLayout>

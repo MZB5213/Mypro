@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout android:layout_margin="10dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/more_headimg"
+        android:src="@mipmap/msc"
+        android:layout_width="80dp"
+        android:layout_height="80dp" />
+
+    <TextView
+        android:id="@+id/more_name"
+        android:textStyle="bold"
+        android:layout_marginLeft="10dp"
+        app:layout_constraintLeft_toRightOf="@id/more_headimg"
+        android:textSize="20sp"
+        android:text="小蜗牛"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@id/more_name"
+        android:id="@+id/more_number"
+        android:textStyle="bold"
+        android:layout_marginLeft="10dp"
+        app:layout_constraintLeft_toRightOf="@id/more_headimg"
+        android:textSize="20sp"
+        android:text="0关注"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:gravity="center_vertical"
+        android:layout_marginRight="30dp"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:text="+"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp" />
+
+
+
+</android.support.constraint.ConstraintLayout>

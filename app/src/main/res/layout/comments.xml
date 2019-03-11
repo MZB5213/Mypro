@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:background="#ffffff"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <RelativeLayout
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/mfales"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:text="取消"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_centerHorizontal="true"
+        android:text="写评论"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/mrelease"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_alignParentRight="true"
+        android:textColor="#f0da76"
+        android:text="发布"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:background="@drawable/boder"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="300dp"
+        android:layout_height="200dp">
+
+        <EditText
+            android:layout_margin="20dp"
+            android:background="@null"
+            android:maxLength="150"
+            android:focusable="true"
+            android:id="@+id/edit"
+            android:hint="评论内容最多150字"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:id="@+id/msize"
+            android:layout_margin="10dp"
+            android:textAlignment="textEnd"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:text="0/150"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="end" />
+    </RelativeLayout>
+
+
+</LinearLayout>
